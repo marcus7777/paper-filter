@@ -245,7 +245,7 @@ To use
         if (output.length) {
           return output
         } else {
-          delete(obj_filters[byArray.shift()])
+          delete(obj_filters[byArray.pop()])
           return this.justOfTypes(data, obj_filters)
         }
       }
